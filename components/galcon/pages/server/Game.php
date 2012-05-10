@@ -105,7 +105,5 @@ class Game {
     
     // Game
     private $player;
-    //private $players;
-    //private $map;
 }
 ?>
