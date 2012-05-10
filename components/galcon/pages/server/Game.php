@@ -31,12 +31,12 @@ class Game {
                     "message" => "Получить ходы не удалось");
                 break;
             case "getMap" :
-                generateMap();
-                $result = getMap();
+                $this->generateMap();
+                $result = $this->getMap();
                 break;
             case "getPlayers" :
-                updatePlayers();
-                $result = getPlayers();
+                $this->updatePlayers();
+                $result = $this->getPlayers();
                 break;
             default:
                 $result = Array("status" => false,
