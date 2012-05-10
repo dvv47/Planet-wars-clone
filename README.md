@@ -1,4 +1,6 @@
 Planet-wars-clone
 =================
 
-client html5 + js
+Client html5 + js
+Server php
+Connection ajax, maybe websockets later
