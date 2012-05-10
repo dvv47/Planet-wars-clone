@@ -22,7 +22,7 @@ if ($site->logined) {
         <td><?=$row[0]?></td>
     </tr>
     <tr>
-        <td><button onclick="ajaxSend('logout=true&ajax=true', ajaxResult)">Выйти</button></td>
+        <td><button onclick="ajaxSend(hnd, 'logout=true')">Выйти</button></td>
     </tr>
 </table>
 <?php 
@@ -82,18 +82,20 @@ if ($site->logined) {
 <script>
     function send(param) {
         var form = document.forms['auth'];
-        var hnd = function() {
-            if (this.readyState === 4) {
-                if (this.status === 200) {
-                    var result = eval("("+this.responseText+")");
-                    if (result.status)
-                        window.location.reload(true);
-                    else message(result.message);
-                }
-            }
-        }
         if (form.checkValidity())
             ajaxSend(hnd, "name="+form.name.value+"&pass="+form.pass.value+"&"+param+"=true");
     }
 </script>
 <?php } ?>
+<script>
+    function hnd() {
+        if (this.readyState === 4) {
+            if (this.status === 200) {
+                var result = eval("("+this.responseText+")");
+                if (result.status)
+                    window.location.reload(true);
+                else message(result.message);
+            }
+        }
+    }
+</script>

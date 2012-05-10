@@ -5,7 +5,8 @@ $query = "CREATE TABLE galcon_rooms (
     id TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(128),
     players_now TINYINT UNSIGNED,
-    players_max TINYINT UNSIGNED)";
+    players_max TINYINT UNSIGNED
+    map VARCHAR(600))";
 $mysqli->query($query);
 if ($mysqli->error) 
     die($mysqli->error);

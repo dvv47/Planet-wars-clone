@@ -28,10 +28,8 @@ class Component {
             include $this->dir.'/index.php';
     }
     public function display() {
-        if ($this->_load) {
-            //echo "<a href='{$this->site->siteRoot}/galcon/dom'>dom</a> <a href='{$this->site->siteRoot}/galcon/canvas'>canvas</a><div class='clear'></div>";
+        if ($this->_load)
             include $this->dir.'/view.php';
-        }
     }
 }
 ?>
