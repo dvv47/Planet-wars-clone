@@ -1,0 +1,45 @@
+#main {
+    width: 600px;
+}
+
+#game {
+    border: 1px solid black;
+}
+
+#field {
+    position: relative;
+    height: 480px;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet p {
+    text-align: center;
+    margin-top: 40%;
+}
+
+#debug {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.ship {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+    color: gray;
+}
+.ship:after {
+    z-index: -1;
+    font-size: 3em;
+    content: "▶";
+    /* &#9654; */
+}
+.ship p {
+    color: black;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}

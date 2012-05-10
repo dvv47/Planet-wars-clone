@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#all {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu {
+    clear: both;
+    float: left;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#content {
+    margin-left: 20px;
+    float: left;
+}
+
+#header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#messages div {
+    border-top: solid 1px #DDD;
+    border-bottom: solid 1px #DDD;
+    padding: 5px 2px;
+}
+
+#login {
+    float:right;
+}
+
+#adminformlist li {
+    list-style: none;
+    padding-bottom: 10px;
+}

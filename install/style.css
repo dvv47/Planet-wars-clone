@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#all {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+nav {
+    clear: both;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+article {
+    margin-left: 20px;
+    float: left;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

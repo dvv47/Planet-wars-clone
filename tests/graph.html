@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            #graph {
+                width: 800px;
+                height: 400px;
+                background-color: gray;
+            }
+            .vertical {
+                float: left;
+            }
+            .vertical ul li {
+                padding: 5px;
+            }
+            .horizontal {
+                float: left;
+            }
+            .horizontal ul li {
+                float: left;
+                padding: 5px;
+            }
+            .horizontal ul * {
+                border: 2px solid white;
+            }
+            #canvas {
+                margin-left: 10px;
+                margin-top: 10px;
+                float: left;
+                width: 400px;
+                height: 250px;
+                background-color: white;
+                border: 2px solid black;
+            }
+            .clear {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="graph">
+            <div class="horizontal">
+                <ul>
+                    <li>test1</li>
+                    <li>test2</li>
+                    <li>test3</li>
+                    <li>test4</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="vertical">
+                <ul>
+                    <li>test1</li>
+                    <li>test2</li>
+                    <li>test3</li>
+                    <li>test4</li>
+                </ul>
+            </div>
+            <div id="canvas"></div>
+        </div>
+    </body>
+</html>
